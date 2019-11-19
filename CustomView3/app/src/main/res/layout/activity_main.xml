@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorAccent"
+        tools:context=".MainActivity">
+
+    <com.example.pch.customview.PayActionMenu
+            android:id="@+id/customViewNormal1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:action_title="정보 변경"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:action_warning_image_visibility="visible"
+            app:layout_constraintStart_toStartOf="parent">
+    </com.example.pch.customview.PayActionMenu>
+
+    <com.example.pch.customview.PayActionMenu
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:action_title="카카오페이 탈퇴"
+            app:layout_constraintTop_toBottomOf="@+id/customViewNormal1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/customViewNormal2">
+    </com.example.pch.customview.PayActionMenu>
+
+    <com.example.pch.customview.PaySwitchMenu
+            android:id="@+id/customSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switch_title="@string/app_name"
+            app:switch_state="true"
+            app:switch_title_color="#FF0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customViewNormal2">
+    </com.example.pch.customview.PaySwitchMenu>
+
+    <com.example.pch.customview.PayActionMenu
+            android:id="@+id/customAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:action_title="앱 버젼"
+            app:action_information="2.0.0"
+            app:action_warning_image_visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/customSwitch">
+    </com.example.pch.customview.PayActionMenu>
+
+    <com.example.pch.customview.PayActionMenu
+            android:id="@+id/customAlarm2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:action_title="화면 잠금 사용"
+            app:action_information="사용 중"
+            app:action_warning_image_visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/customAlarm">
+    </com.example.pch.customview.PayActionMenu>
+
+    <com.example.pch.customview.PaySwitchMenu
+            android:id="@+id/customSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switch_title="서비스 이용 알림"
+            app:switch_title_color="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customAlarm2">
+    </com.example.pch.customview.PaySwitchMenu>
+
+    <com.example.pch.customview.PayActionMenu
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:action_title="abcd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customSwitch2">
+
+    </com.example.pch.customview.PayActionMenu>
+
+
+</android.support.constraint.ConstraintLayout>

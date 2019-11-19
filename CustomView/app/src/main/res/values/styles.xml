@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PaySwitchTheme" parent = "@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="trackTint">@drawable/switch_track_selector</item>
+        <item name="thumbTint">@drawable/switch_thumb_selector</item>
+    </style>
+    <style name="Base.AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/default_shared_element_transform</item>
+        <item name="android:windowSharedElementExitTransition">@transition/default_shared_element_transform</item>-->
+    </style>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PaySwitchMenu">
+        <attr name="switch_title" format="string"/>
+        <attr name="switch_title_color" format="color"/>
+        <attr name="switch_state" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PayActionMenu">
+        <attr name="action_title" format="string"/>
+        <attr name="action_title_color" format="color"/>
+        <attr name="action_warning_image" format="reference"/>
+        <attr name="action_warning_image_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="4"/>
+            <enum name="gone" value="8"/>
+        </attr>
+        <attr name="action_information" format="string"/>
+        <attr name="action_information_color" format="color"/>
+        <attr name="action_information_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="4"/>
+            <enum name="gone" value="8"/>
+        </attr>
+        <attr name="actionBackgroundTint" format="reference"/>
+    </declare-styleable>
+</resources>

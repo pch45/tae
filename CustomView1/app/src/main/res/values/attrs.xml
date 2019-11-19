@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="menu_name"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomViewSwitch">
+        <attr name="menu_name"></attr>
+    </declare-styleable>
+</resources>

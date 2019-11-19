@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PayNormalCustomView">
+        <attr name="normal_menu_name" format="string"></attr>
+        <attr name="normal_text_color" format="color"></attr>
+        <attr name="normal_text_size" format="dimension"></attr>
+        <attr name="alarm_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+        <attr name="normal_up_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+        <attr name="normal_down_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+        <attr name="sub_text" format="string"></attr>
+        <attr name="warning_image" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PaySwitchCustomView">
+        <attr name="switch_menu_name" format="string"></attr>
+        <attr name="switch_text_color" format="color"></attr>
+        <attr name="switch_text_size" format="dimension"></attr>
+        <attr name="switch_up_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+
+        <attr name="switch_down_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PayExplainCustomView">
+        <attr name="setting_explain" format="string"></attr>
+        <attr name="explain_text_color" format="color"></attr>
+        <attr name="explain_text_size" format="dimension"></attr>
+        <attr name="explain_up_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+
+        <attr name="explain_down_line_visibility" format="enum">
+            <enum name="visible" value="0"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

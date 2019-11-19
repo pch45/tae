@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/setting_toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         android:background="#f1f3f5"
+         android:navigationIcon="@drawable/ic_arrow_back_grey_01_24_dp">
+
+    <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="설정"/>
+
+</Toolbar>

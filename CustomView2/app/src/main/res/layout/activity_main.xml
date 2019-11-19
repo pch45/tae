@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <com.example.pch.customview.PayNormalCustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:normal_menu_name="정보 변경"
+            app:normal_text_color="#FF0000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:alarm_visibility="visible"
+            app:normal_down_line_visibility="visible"
+            app:layout_constraintStart_toStartOf="parent" android:id="@+id/customViewNormal1">
+    </com.example.pch.customview.PayNormalCustomView>
+
+    <com.example.pch.customview.PayNormalCustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:normal_menu_name="카카오페이 탈퇴"
+            app:normal_down_line_visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/customViewNormal1" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/customViewNormal2">
+    </com.example.pch.customview.PayNormalCustomView>
+
+    <com.example.pch.customview.PaySwitchCustomView
+            android:id="@+id/customSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switch_menu_name="서비스 이용 알림" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customViewNormal2">
+    </com.example.pch.customview.PaySwitchCustomView>
+
+    <com.example.pch.customview.PayExplainCustomView
+            android:id="@+id/customExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customSwitch"
+            app:setting_explain="이 알림을 끄면 송금,충전,결제 등\n서비스 이용에 관한 알림을 받을 수 없습니다.">
+    </com.example.pch.customview.PayExplainCustomView>
+
+    <com.example.pch.customview.PayNormalCustomView
+            android:id="@+id/customAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:normal_menu_name="앱 버젼"
+            app:sub_text="2.0.0"
+            app:alarm_visibility="visible"
+            app:normal_down_line_visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/customExplain"></com.example.pch.customview.PayNormalCustomView>
+
+    <com.example.pch.customview.PayNormalCustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:normal_menu_name="화면 잠금 사용"
+            app:sub_text="사용 중"
+            app:alarm_visibility="gone"
+            app:normal_down_line_visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/customAlarm"></com.example.pch.customview.PayNormalCustomView>
+
+</android.support.constraint.ConstraintLayout>
